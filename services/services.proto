@@ -1,0 +1,7 @@
+syntax = "proto3";
+package services;
+
+import "messages/messages.proto";
+service SomeAPI{
+  rpc FOO(messages.Empty) returns (messages.Empty);
+}
